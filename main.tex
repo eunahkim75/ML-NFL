@@ -5,7 +5,7 @@
 \usepackage{dcolumn}% Align table columns on decimal point
 \usepackage{bm}
 \usepackage[usenames]{color}
-
+\usepackage{subfigure}
 \begin{document}
 
 \title{ Detecting non-Fermi liquid transport in the quantum critical region \\ via quantum loop topography}
@@ -32,7 +32,7 @@ $^{1}$Department of Physics, Cornell University, Ithaca, New York 14853, USA}%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Introduction
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-[1 problem statement: NFL in QC ]
+[1 problem statement: NFL in QC -- Simon ]
 Most often defined by transport in experiment, ubiquitous
 \\
 \\
@@ -47,7 +47,7 @@ Most often defined by transport in experiment, ubiquitous
 \\
 
 
-[2 literature in sign-free MC]
+[2 literature in sign-free MC -- Simon]
 Transport is hard. "proxies" are not satisfactory.
 \\
 \\
@@ -65,7 +65,7 @@ Transport is hard. "proxies" are not satisfactory.
 \\
 \\
 
-[3 literature in phase recognition]
+[3 literature in phase recognition -- EK]
 Ideal application of ML is where conventional approaches are lacking: such as topological order and NFL.
  \\
  \\
@@ -83,7 +83,7 @@ Ideal application of ML is where conventional approaches are lacking: such as to
     \centering
 \includegraphics[width=.5\textwidth]{3PT-PDs.png}
     \caption{Caption}
-    \label{fig:my_label}
+    \label{fig:pds}
 \end{figure}
 [4 In this paper - Fig 1] 
 \\
@@ -96,7 +96,7 @@ Ideal application of ML is where conventional approaches are lacking: such as to
 \\
 
 
-[5 Two QCP's to study:]
+[5 Two QCP's to study -- Sam]
 Their similarities and differences in words.
 \\
 \\
@@ -108,7 +108,13 @@ Their similarities and differences in words.
 \\
 \\
 
-[6 ML architecture and preprocessing]
+ \begin{figure} [t]
+    \centering
+\includegraphics[width=.5\textwidth]{qlt.png}
+    \caption{Caption}
+    \label{fig:qlt}
+\end{figure}
+[6 ML architecture and preprocessing -- Trey FIG \ref{fig:qlt}]
 \\
 \\
 \\
@@ -121,7 +127,9 @@ Their similarities and differences in words.
 \\
 \\
 
-[7 SDW model action and what is known]
+
+[7 SDW model action and what is known -- Carsten]
+\\
 \\
 \\
 \\
@@ -132,23 +140,89 @@ Their similarities and differences in words.
 \\
 \\
 
-[8 2pt classification with ]
+[8 2pt classification for ordered phase -- Sam/Trey. FIG \ref{fig:2ptsdw}]
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+ \begin{figure} [t]
+    \centering
+\includegraphics[width=.45\textwidth]{2PT-SDW.png}
+    \caption{Caption}
+    \label{fig:2ptsdw}
+\end{figure}
 
-[9]
+[9 2PT classification for NFL-FL and 3PT classification --Sam/Trey]
+FIG \ref{fig:2ptsdw}, FIG \ref{fig:pds}
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
 
-[10]
 
-[11]
 
-[12]
 
-[13]
+[10 Nematic action and what is known -- Sam/Trey]
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
 
-[14]
+\begin{figure} [t]
+    \centering
+    \subfigure[]{
+\includegraphics[width=.22\textwidth]{2PT-nematic-order.png}}
+    \subfigure[]{
+\includegraphics[width=.22\textwidth]{2PT-nematic.png}}
 
-[15]
+    \caption{Caption}
+    \label{fig:2ptnem}
+\end{figure}
 
-[16]
+[11 2PT classification for ordered phase -- Sam/Trey]
+FIG \ref{fig:2ptnem}
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+
+
+[12 2PT classification for NFL-FL and 3pt classification --Sam/Trey]
+FIG \ref{fig:2ptnem}, FIG \ref{fig:pds}.
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+
+[13 Summary --EK]
+
+[14 Implications and Outlook --EK]
+
+
 
 {\it Acknowledgements.--} 
 We acknowledge useful discussions with XXX. SL and E-AK acknowledge the support from the U.S. Department of Energy, Office of Basic Energy Sciences, Division of Materials Science and Engineering under Award DE-SC0018946.
