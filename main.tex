@@ -6,6 +6,10 @@
 \usepackage{bm}
 \usepackage[usenames]{color}
 \usepackage{subfigure}
+
+\newcommand{\cb}[1]{\textcolor{magenta}{[Carsten: #1]}}
+
+
 \begin{document}
 
 \title{ Detecting non-Fermi liquid transport in the quantum critical region \\ via quantum loop topography}
@@ -24,7 +28,7 @@ $^{1}$Department of Physics, Cornell University, Ithaca, New York 14853, USA}%
 \date{\today}
 
 \begin{abstract}
-Anomalous transport, such as T-linear resistivity (a hallmark of non-Fermi liquid behavior), is a ubiquitous feature of strongly correlated metallic systems, but famously difficult to understand theoretically. For relevant simple models, the transport computations of even numerically exact Monte Carlo simulations are subject to enormous systematic errors and come at great additional computational cost. Building on earlier work, we apply quantum loop topography (QLT) and supervised learning on quantum Monte Carlo data to examine the Fermi liquid to non-Fermi liquid crossover in models of both Ising nematic and spin density wave quantum criticality. Previous work on these models has demonstrated this crossover using measurements of correlation functions at nonzero imaginary time separation. Our results, using only equal time measurements, show good agreement with these previous results at dramatically lower computational cost. Hence, QLT-based machine learning can accelerate the exploration of parameter space in search for non-Fermi liquid behavior by obviating the need for expensive dynamical measurements.
+Anomalous transport, such as T-linear resistivity (a hallmark of non-Fermi liquid behavior), is a ubiquitous feature of strongly correlated metallic systems, but famously difficult to understand theoretically. For relevant simple models, the transport computations of even numerically exact Monte Carlo simulations are subject to enormous systematic errors and come at great additional computational cost. Building on earlier work, we apply quantum loop topography (QLT) and supervised learning on quantum Monte Carlo data to examine the Fermi liquid to non-Fermi liquid crossover in models of both Ising nematic and \cb{antiferromagnetic} spin density wave quantum criticality. Previous work on these models has demonstrated this crossover using measurements of correlation functions at nonzero imaginary time separation. Our results, using only equal time measurements, show good agreement with these previous results at dramatically lower computational cost. Hence, QLT-based machine learning can accelerate the exploration of parameter space in search for non-Fermi liquid behavior by obviating the need for expensive dynamical measurements.
 \end{abstract}
 
 \maketitle

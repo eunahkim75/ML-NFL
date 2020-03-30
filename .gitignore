@@ -1,0 +1,5 @@
+main.pdf
+*.aux
+*.log
+*.synctex.gz
+mainNotes.bib
