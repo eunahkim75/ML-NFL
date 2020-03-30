@@ -3,3 +3,5 @@ main.pdf
 *.log
 *.synctex.gz
 mainNotes.bib
+*.blg
+*.bbl
